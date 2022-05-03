@@ -1,0 +1,102 @@
+body
+{
+    background: rgb(20, 20, 20);
+    zoom: 200%;
+    cursor: default;
+    -ms-user-select: none; 
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    user-select: none; 
+}
+
+.calc-wrapper .digits-buttons {
+    margin-top: 5px;
+}
+
+.calc-wrapper .digits-buttons .digit-button {
+    width: 30px;
+    height: 30px;
+    background-color: #ff9400;
+    border: 0px;
+    border-radius: 15px;
+    color: white;
+}
+
+.calc-wrapper .operator-buttons .operator-button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    background-color: #ff9400;
+    border: 0px;
+    border-radius: 15px;
+    color: white;
+}
+
+.calc-wrapper .digits, .calc-wrapper .operator-buttons {
+    display: inline-block;
+}
+
+.digits-buttons input[type = button]:hover
+{
+    background-color: #eb8900;
+}
+
+.operator-buttons input[type = button]:hover
+{
+    background-color: #eb8900;
+}
+
+.calc-wrapper
+{
+    background-color: black;
+    width: 140px;
+    height: 167px;
+    padding-left: 8px;
+    padding-top: 7px;
+    display: inline-block;
+    outline: none;
+    border-color: #9ecaed;
+    border-radius: 10px;
+    box-shadow: 0 0 15px gray;
+
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin: -83.5px 0 0 -70px;
+}
+
+.result-area input[type = button]
+{
+    background-color: #ff9400;
+    border: 0px;
+    color: white;
+    border-radius: 15px;
+}
+
+.result-area input[type = button]:hover
+{
+    background-color: #eb8900;
+}
+
+.result-area input[type = text]
+{
+    background-color: lightgray;
+    border: 0px;
+    border-radius: 5px;
+    padding-left: 5px;
+    width: 93px;
+}
+input[type = button][value = "="]
+{
+	height:30px;
+	width: 63px;
+	background-color: #ff9400;
+    border: 0px;
+    color: white;
+    border-radius: 15px;
+}
+
+.result-area input[type = text]::selection {background: darkgray; color:gray;}
+.result-area input[type = text]::-moz-selection {background: darkgray; color:gray;}
+.result-area input[type = text]::-webkit-selection {background: darkgray; color:gray;}

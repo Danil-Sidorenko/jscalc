@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сalculator</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+    
+    <link rel="icon" href="first.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="first.ico" type="image/x-icon" />
+
+    <!-- Основной JS скрипт -->
+    <script src="static/js/main.js" defer></script>
+</head>
+<body>
+    <div class="calc-wrapper">
+        <div class="result-area">
+            <input disabled id="result" type="text" readonly value="0">
+            <input id="clear" type="button" value="ce">
+        </div>
+        <div class="digits">
+            <div class="digits-buttons">
+                <input class="digit-button" type="button" value="1">
+                <input class="digit-button" type="button" value="2">
+                <input class="digit-button" type="button" value="3">    
+            </div>
+            <div class="digits-buttons">
+                <input class="digit-button" type="button" value="4">
+                <input class="digit-button" type="button" value="5">
+                <input class="digit-button" type="button" value="6">    
+            </div>
+            <div class="digits-buttons">
+                <input class="digit-button" type="button" value="7">
+                <input class="digit-button" type="button" value="8">
+                <input class="digit-button" type="button" value="9">    
+            </div>
+            <div class="digits-buttons">
+                <input class="digit-button" type="button" value="0">
+				<input type="button" class="operator-button" value="=">
+            </div>
+        </div>
+        <div class="operator-buttons">
+            <input type="button" class="operator-button" value="+">
+            <input type="button" class="operator-button" value="-">
+            <input type="button" class="operator-button" value="/">
+            <input type="button" class="operator-button" value="*">
+        </div>
+    </div>
+</body>
+</html>
